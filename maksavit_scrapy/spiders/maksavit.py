@@ -75,6 +75,8 @@ class MaksavitSpider(scrapy.Spider):
         status = response.css('div.available-count ::text').get()
         status = None if status is None else status[:-1]
         in_stock = True if status == 'сегодня' else False
+        # Количество подсчитать невозможно.
+        # Ставлю дефолтное None, как указано в ТЗ
         count = None
 
         img = response.css('div.product-picture img::attr(src)').get()
