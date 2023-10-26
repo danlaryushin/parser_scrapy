@@ -89,12 +89,12 @@ class MaksavitSpider(scrapy.Spider):
         round_view = (
             response.css('div.product-picture')
             .xpath('//img[contains(@src, "360view")]/@src')
-            .get()
+            .getall()
         )
         video = (
             response.css('div.product-picture')
             .xpath('//img[contains(@src, "video")]/@src')
-            .get()
+            .getall()
         )
 
         info = response.css('div.product-instruction__guide')
