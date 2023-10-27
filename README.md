@@ -1,6 +1,6 @@
 ![python](https://img.shields.io/badge/python-222324?style=for-the-badge&logo=python&logoColor=yellow)
 ![scrapy](https://img.shields.io/badge/scrapy-222324?style=for-the-badge&logo=searxng&logoColor=brown)
-# maksavit_scrapy
+# parser_scrapy
 Парсер товаров с сайта maksavit.ru реализован с помощью фреймворка Scrapy.
 
 Реализовано получение информации о товарах интернет-магазина из списка категорий по заранее заданному шаблону.
